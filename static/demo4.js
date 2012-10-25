@@ -8,7 +8,7 @@ function fetchUrls(urls, callback) {
         if (urls.length) {
             var url = urls.shift();
             $.get(url, function(response) {
-				console.log('Fetched URL:', url, 'and got:', response);
+                console.log('Fetched URL:', url, 'and got:', response);
                 responses.push(response);
                 _fetch(urls);
             });
