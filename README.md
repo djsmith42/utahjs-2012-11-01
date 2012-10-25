@@ -7,7 +7,9 @@ November 1, 2012
 To run the sample code, you'll need Python and Flask:
 
 	sudo apt-get install python
-	pip install flask
+	sudo pip install flask
+
+(Don't use sudo if you don't have to--virtualenv is preferred)
 
 Now run the server:
 
