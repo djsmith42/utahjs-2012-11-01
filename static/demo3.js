@@ -12,7 +12,7 @@ function fetchNextUrl() {
     var url = urlsToFetch.shift();
     $.get(url, function(response) {
         responses.push(response);
-		console.log('Fetched URL:', url, 'and got:', response);
+        console.log('Fetched URL:', url, 'and got:', response);
         if (urlsToFetch.length) {
             fetchNextUrl();
         } else {
