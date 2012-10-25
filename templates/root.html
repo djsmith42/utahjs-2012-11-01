@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hello, Utah JS</title>
+		<script type="text/javascript" src="/static/jquery-1.8.2.js"></script>
+		<script type="text/javascript" src="/static/jquery-ui-1.9.1.js"></script>
+		{% if demo %}
+		<script type="text/javascript" src="/static/demo{{demo}}.js"></script>
+		{% endif %}
+	</head>
+	<body>
+		{% if demo %}
+		<h1>Demo {{demo}} of {{count}}</h1>
+		  {% if demo == 2 %}
+			<a class="click-me" href="#">Click Me</a>
+			<br />
+			<br />
+			<br />
+		  {% endif %}
+
+			{% if demo < count %}
+			<a href="/demos/{{demo+1}}">Next &raquo;</a>
+			{% endif %}
+		{% else %}
+		<h1>UtahJS Presentation</h1>
+		<a href="/demos/1">Start &raquo;</a>
+		{% endif %}
+
+	</body>
+</html>
