@@ -4,11 +4,13 @@ UtahJS Presentation
 November 1, 2012
 ----------------
 
-To run the sample code, you'll need Python.
+To run the sample code, you'll need Python and Flask:
 
-To get setup, do this:
-
+	sudo apt-get install python
 	pip install flask
+
+Now run the server:
+
 	python demo.py
 
-Now to go `http://127.0.0.1:5000` in your browser
+And go to `http://127.0.0.1:5000` in your browser.
