@@ -56,7 +56,7 @@ console.timeEnd('countVowels2()');
 
 
 
-// Yes, this is a *stupid* way to do this. It's slow to demonstrate the point
+// Yes, this is a *stupid* way to do this. It's purposely slow to demonstrate the point
 function buildVowelLookupTable() {
     var ret = {}
     ret.a = true;
