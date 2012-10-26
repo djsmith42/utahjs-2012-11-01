@@ -1,6 +1,6 @@
 import time, flask
 
-DEMO_COUNT = 4
+DEMO_COUNT = 6
 
 app = flask.Flask('Utah JS Demo')
 
