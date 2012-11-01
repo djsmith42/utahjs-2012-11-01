@@ -1,6 +1,6 @@
-import time, flask
+import os, time, flask, fnmatch
 
-DEMO_COUNT = 6
+DEMO_COUNT = len([x for x in os.listdir("static") if fnmatch.fnmatch(x, "demo*.js")])
 
 app = flask.Flask('Utah JS Demo')
 
